@@ -11,26 +11,30 @@
     "umd"
   ],
   "scripts": {
-    "build": "nwb build-react-component",
+    "build": "nwb build-react-component --copy-files",
     "clean": "nwb clean-module && npm clean-demo",
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react-spinkit": "2.1.1"
+  },
   "peerDependencies": {
     "react": "15.x"
   },
   "devDependencies": {
+    "bootstrap-sass": "3.3.7",
     "nwb": "0.15.x",
+    "nwb-sass": "0.7.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
   "author": "",
   "homepage": "",
   "license": "MIT",
-  "repository": "",
+  "repository": "git@github.com:bisudev/bisu-react-loading.git",
   "keywords": [
     "react-component"
   ]

@@ -1,9 +1,15 @@
 import React from 'react'
+import { string } from 'prop-types'
+import Spinner from 'react-spinkit'
 
-export default React.createClass({
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
-})
+const BisuReactLoading = ({ name }) => (
+  <div className="bisu--react-loading">
+    <Spinner spinnerName={name} noFadeIn />
+  </div>
+)
+
+BisuReactLoading.defaultProps = {
+  name: 'cube-grid',
+}
+
+export default BisuReactLoading

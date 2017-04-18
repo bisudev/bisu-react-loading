@@ -1,0 +1,11 @@
+.bisu--react-loading {
+  position: relative;
+
+  .sk-spinner {
+    margin: 20px auto;
+  }
+
+  .sk-spinner > * {
+    background-color: $brand-info;
+  }
+}
