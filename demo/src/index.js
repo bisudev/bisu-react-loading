@@ -12,6 +12,11 @@ let Demo = React.createClass({
         <Component name="double-bounce" />
       </div>
       <Component name="cube-grid" />
+      <h3>Overlay example</h3>
+      <div className="overlay-container">
+        <p>Some text here</p>
+        <Component text="Processing..." overlay />
+      </div>
       <Component />
     </div>
   }

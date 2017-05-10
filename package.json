@@ -1,6 +1,6 @@
 {
   "name": "bisu-react-loading",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "bisu-react-loading React component",
   "main": "lib/index.js",
   "module": "es/index.js",

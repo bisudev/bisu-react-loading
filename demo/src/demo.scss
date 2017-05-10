@@ -58,3 +58,9 @@
 
 // import the component
 @import "../../src/style.scss";
+
+.overlay-container {
+  position: relative;
+  height: 300px;
+  width: 500px;
+}
