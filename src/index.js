@@ -1,20 +1,35 @@
 import React from 'react'
-import { string } from 'prop-types'
-import Spinner from 'react-spinkit'
+import Pulse from 'better-react-spinkit/dist/Pulse'
 import cn from 'classnames'
 
-const BisuReactLoading = ({ name, overlay, text }) => {
-  const cl = cn('bisu--react-loading', { overlay })
+const BisuReactLoading = ({ text, overlay, size, ...props }) => {
+  const cl = cn('bisu--react-loading', { is_overlay: overlay })
   return (
     <div className={cl}>
-      <Spinner spinnerName={name} noFadeIn />
-      <div className="text-center"><small><em>{text}</em></small></div>
+      <div>
+        <Pulse
+          size={size}
+          {...props}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        />
+      </div>
+      <div className="text-center">
+        <small>
+          <em>
+            {text}
+          </em>
+        </small>
+      </div>
     </div>
   )
 }
 
 BisuReactLoading.defaultProps = {
-  name: 'cube-grid',
+  size: 50,
+  text: 'Loading...',
 }
 
 export default BisuReactLoading

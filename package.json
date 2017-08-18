@@ -1,6 +1,6 @@
 {
   "name": "bisu-react-loading",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "bisu-react-loading React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -19,15 +19,21 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
+    "better-react-spinkit": "2.0.0",
     "react-spinkit": "2.1.1"
   },
-  "peerDependencies": {
-    "react": "15.x"
-  },
+  "peerDependencies": {},
   "devDependencies": {
+    "babel-eslint": "7.2.3",
     "bootstrap-sass": "3.3.7",
-    "nwb": "0.15.x",
-    "nwb-sass": "0.7.1",
+    "eslint": "3.19.0",
+    "eslint-config-react-app": "1.0.5",
+    "eslint-plugin-flowtype": "2.33.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "5.0.3",
+    "eslint-plugin-react": "7.0.1",
+    "nwb": "0.18.10",
+    "nwb-sass": "0.8.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
