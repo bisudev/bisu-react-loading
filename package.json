@@ -1,15 +1,10 @@
 {
   "name": "bisu-react-loading",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "bisu-react-loading React component",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "files": [
-    "css",
-    "es",
-    "lib",
-    "umd"
-  ],
+  "files": ["css", "es", "lib", "umd"],
   "scripts": {
     "build": "nwb build-react-component --copy-files",
     "clean": "nwb clean-module && npm clean-demo",
@@ -19,8 +14,7 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
-    "better-react-spinkit": "2.0.0",
-    "react-spinkit": "2.1.1"
+    "better-react-spinkit": "2.0.0"
   },
   "peerDependencies": {},
   "devDependencies": {
@@ -41,7 +35,5 @@
   "homepage": "",
   "license": "MIT",
   "repository": "git@github.com:bisudev/bisu-react-loading.git",
-  "keywords": [
-    "react-component"
-  ]
+  "keywords": ["react-component"]
 }
